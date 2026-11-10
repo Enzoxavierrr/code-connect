@@ -1,0 +1,17 @@
+{
+  "name": "code-connect",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "preview:web": "pnpm --filter web preview",
+    "lint:web": "pnpm --filter web lint",
+    "dev:api": "pnpm --filter api start:dev",
+    "start:api": "pnpm --filter api start",
+    "build:api": "pnpm --filter api build",
+    "prod:api": "pnpm --filter api start:prod",
+    "test:api": "pnpm --filter api test",
+    "install:all": "pnpm install"
+  }
+}
