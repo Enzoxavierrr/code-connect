@@ -12,6 +12,14 @@
     "build:api": "pnpm --filter api build",
     "prod:api": "pnpm --filter api start:prod",
     "test:api": "pnpm --filter api test",
-    "install:all": "pnpm install"
+    "install:all": "pnpm install",
+    "lint": "pnpm -r lint",
+    "build": "pnpm -r build",
+    "test": "pnpm --filter api test && pnpm --filter api test:e2e",
+    "check": "pnpm lint && pnpm build && pnpm test"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": ">=22.22.3"
   }
 }
